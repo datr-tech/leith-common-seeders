@@ -10,7 +10,8 @@ export const dolomiteSeederHopPerSeed = async (
     throw new Error(`hopModel (${hopSeedName}): invalid`);
   }
 
-  const hopModelSaved = await hopModel.save();
+  const options = { validateBeforeSave: false };
+  const hopModelSaved = await hopModel.save(options);
 
   if (!hopModelSaved) {
     throw new Error(`hopModel (${hopSeedName}): not saved`);

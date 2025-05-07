@@ -10,7 +10,8 @@ export const dolomiteSeederJourneyTypePerSeed = async (
     throw new Error(`journeyTypeModel (${journeyTypeSeedName}): invalid`);
   }
 
-  const journeyTypeModelSaved = await journeyTypeModel.save();
+  const options = { validateBeforeSave: false };
+  const journeyTypeModelSaved = await journeyTypeModel.save(options);
 
   if (!journeyTypeModelSaved) {
     throw new Error(`journeyTypeModel (${journeyTypeSeedName}): not saved`);
