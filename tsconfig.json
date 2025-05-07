@@ -19,5 +19,5 @@
   },
   "exclude": [".git", ".github", ".jest", "coverage", "dist"],
   "files": ["src/index.ts"],
-  "include": ["./src/**/*.ts", "./node_modules/mockingoose/types.d.ts"]
+  "include": ["./src/**/*.ts"]
 }
