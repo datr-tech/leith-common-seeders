@@ -1,0 +1,1 @@
+export { campaignBase } from './campaignBase';

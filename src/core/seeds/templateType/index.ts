@@ -1,0 +1,1 @@
+export { templateTypeBase } from './templateTypeBase';
