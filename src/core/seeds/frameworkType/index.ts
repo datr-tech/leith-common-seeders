@@ -1,0 +1,1 @@
+export { frameworkTypeInternal } from './frameworkTypeInternal';

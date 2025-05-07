@@ -1,0 +1,1 @@
+export { userTypeAdmin } from './userTypeAdmin';

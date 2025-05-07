@@ -1,0 +1,1 @@
+export { endpointTypeRest } from './endpointTypeRest';

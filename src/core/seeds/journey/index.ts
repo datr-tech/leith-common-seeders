@@ -1,0 +1,1 @@
+export { journeyBase } from './journeyBase';

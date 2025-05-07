@@ -1,0 +1,1 @@
+export { adminUserBase } from './adminUserBase';
