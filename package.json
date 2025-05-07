@@ -54,6 +54,7 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@datr.tech/parcel-model-schemas-dolomite": "^0.5.2",
+    "@datr.tech/parcel-model-schemas-entity": "^0.4.0",
     "@eslint/compat": "^1.1.1",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.10.0",

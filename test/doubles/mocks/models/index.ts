@@ -1,3 +1,10 @@
+export { EndpointModelMock } from './EndpointModelMock';
+export { EndpointTypeModelMock } from './EndpointTypeModelMock';
+export { FrameworkModelMock } from './FrameworkModelMock';
+export { FrameworkTypeModelMock } from './FrameworkTypeModelMock';
 export { HopModelMock } from './HopModelMock';
 export { JourneyModelMock } from './JourneyModelMock';
 export { JourneyTypeModelMock } from './JourneyTypeModelMock';
+export { ResourceModelMock } from './ResourceModelMock';
+export { ResourceTypeModelMock } from './ResourceTypeModelMock';
+export { ServiceModelMock } from './ServiceModelMock';

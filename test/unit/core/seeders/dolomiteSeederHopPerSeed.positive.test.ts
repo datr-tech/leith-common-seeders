@@ -1,5 +1,6 @@
+import { seederPerSeed } from '@app-lcs2/core/seeders';
+import { hopBase } from '@app-lcs2/core/seeds/hop';
 import { HopModelMock } from '@test-lcs2/doubles/mocks/models';
-import { dolomiteSeederHopPerSeed, hopBase } from './../../../../../dist';
 
 const mockingoose = require('mockingoose');
 
@@ -15,12 +16,13 @@ describe('dolomiteSeederHopPerSeed', () => {
       /*
        * Act
        */
-      const responseFound = await dolomiteSeederHopPerSeed(
-        HopModelMock,
-        hopBase,
-        'hopBase',
-        true,
-      );
+      const responseFound = await seederPerSeed({
+        model: HopModelMock,
+        modelName: 'hopModel',
+        seed: hopBase,
+        seedName: 'hopBase',
+        returnSavedModel: true,
+      });
 
       /*
        * Assert

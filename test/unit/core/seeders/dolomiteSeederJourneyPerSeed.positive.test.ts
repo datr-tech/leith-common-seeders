@@ -1,4 +1,4 @@
-import { dolomiteSeederJourneyPerSeed } from '@app-lcs2/core/seeders/dolomiteSeeder';
+import { seederPerSeed } from '@app-lcs2/core/seeders';
 import { journeyBase } from '@app-lcs2/core/seeds/journey';
 import { JourneyModelMock } from '@test-lcs2/doubles/mocks/models';
 
@@ -16,12 +16,13 @@ describe('dolomiteSeederJourneyPerSeed', () => {
       /*
        * Act
        */
-      const responseFound = await dolomiteSeederJourneyPerSeed(
-        JourneyModelMock,
-        journeyBase,
-        'journeyBase',
-        true,
-      );
+      const responseFound = await seederPerSeed({
+        model: JourneyModelMock,
+        modelName: 'journeyModel',
+        seed: journeyBase,
+        seedName: 'journeyBase',
+        returnSavedModel: true,
+      });
 
       /*
        * Assert
