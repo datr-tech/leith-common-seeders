@@ -1,6 +1,6 @@
 {
   "name": "@datr.tech/leith-common-seeders",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": false,
   "description": "A Leith package of common mongoose model seeders",
   "keywords": [
