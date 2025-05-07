@@ -24,10 +24,10 @@ jest.mock('@test-lcs2/doubles/mocks/models/JourneyTypeModelMock', () => ({
   }),
 }));
 
-import { dolomiteSeeder } from '../../../../dist';
 import { HopModelMock } from '@test-lcs2/doubles/mocks/models/HopModelMock';
 import { JourneyModelMock } from '@test-lcs2/doubles/mocks/models/JourneyModelMock';
 import { JourneyTypeModelMock } from '@test-lcs2/doubles/mocks/models/JourneyTypeModelMock';
+import { dolomiteSeeder } from '../../../../dist';
 
 describe('dolomiteSeeder', () => {
   describe('positive', () => {

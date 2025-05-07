@@ -56,7 +56,6 @@ jest.mock('@test-lcs2/doubles/mocks/models/ServiceModelMock', () => ({
   }),
 }));
 
-import { entitySeeder } from '../../../../dist';
 import { EndpointModelMock } from '@test-lcs2/doubles/mocks/models/EndpointModelMock';
 import { EndpointTypeModelMock } from '@test-lcs2/doubles/mocks/models/EndpointTypeModelMock';
 import { FrameworkModelMock } from '@test-lcs2/doubles/mocks/models/FrameworkModelMock';
@@ -64,6 +63,7 @@ import { FrameworkTypeModelMock } from '@test-lcs2/doubles/mocks/models/Framewor
 import { ResourceModelMock } from '@test-lcs2/doubles/mocks/models/ResourceModelMock';
 import { ResourceTypeModelMock } from '@test-lcs2/doubles/mocks/models/ResourceTypeModelMock';
 import { ServiceModelMock } from '@test-lcs2/doubles/mocks/models/ServiceModelMock';
+import { entitySeeder } from '../../../../dist';
 
 describe('entitySeeder', () => {
   describe('positive', () => {
