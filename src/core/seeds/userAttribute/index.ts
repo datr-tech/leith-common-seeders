@@ -1,0 +1,1 @@
+export { userAttributeAdminBase } from './userAttributeAdminBase';

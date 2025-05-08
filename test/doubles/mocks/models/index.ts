@@ -1,3 +1,5 @@
+export { AttributeModelMock } from './AttributeModelMock';
+export { AttributeTypeModelMock } from './AttributeTypeModelMock';
 export { CampaignModelMock } from './CampaignModelMock';
 export { CampaignTypeModelMock } from './CampaignTypeModelMock';
 export { EndpointModelMock } from './EndpointModelMock';
@@ -9,8 +11,10 @@ export { JourneyModelMock } from './JourneyModelMock';
 export { JourneyTypeModelMock } from './JourneyTypeModelMock';
 export { ProjectModelMock } from './ProjectModelMock';
 export { ProjectTypeModelMock } from './ProjectTypeModelMock';
+export { ResourceAttributeModelMock } from './ResourceAttributeModelMock';
 export { ResourceModelMock } from './ResourceModelMock';
 export { ResourceTypeModelMock } from './ResourceTypeModelMock';
 export { ServiceModelMock } from './ServiceModelMock';
 export { TemplateModelMock } from './TemplateModelMock';
 export { TemplateTypeModelMock } from './TemplateTypeModelMock';
+export { UserAttributeModelMock } from './UserAttributeModelMock';

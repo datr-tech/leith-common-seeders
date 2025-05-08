@@ -1,0 +1,1 @@
+export { attributeBase } from './attributeBase';
