@@ -1,0 +1,1 @@
+export { organisationRoleDatrTechAdmin } from './organisationRoleDatrTechAdmin';

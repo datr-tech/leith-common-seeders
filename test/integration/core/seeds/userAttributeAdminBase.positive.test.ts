@@ -3,7 +3,10 @@ import { userAttributeAdminBase } from './../../../../dist';
 describe('userAttributeAdminBase', () => {
   describe('positive', () => {
     test('should contain the expected properties', () => {
-      const userAttributeExpect = {
+      /*
+       * Arrange
+       */
+      const userAttributeExpected = {
         userAttributeId: '681bf7c14078454c1644b843',
         attributeId: '681bf5d3f135748ddb7485e7',
         userId: '681a061ac6e45110dff9dcad',
@@ -12,8 +15,12 @@ describe('userAttributeAdminBase', () => {
         adminStatusId: '681a044bd4546c227ff1305c',
         adminUserId: '681a061ac6e45110dff9dcad',
       };
+
+      /*
+       * Act
+       */
       const userAttributeFound = { ...userAttributeAdminBase };
-      expect(userAttributeFound).toStrictEqual(userAttributeExpect);
+      expect(userAttributeFound).toStrictEqual(userAttributeExpected);
     });
   });
 });

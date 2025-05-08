@@ -3,7 +3,10 @@ import { hopBase } from '@app-lcs2/core/seeds/hop';
 describe('hopBase', () => {
   describe('positive', () => {
     test('should contain the expected properties', () => {
-      const hopBaseExpect = {
+      /*
+       * Arrange
+       */
+      const hopExpected = {
         hopId: '681a017def8b6fd17c3ff585',
         journeyId: '681a0c9945449fda5d997940',
         resourceId: '681a9b25b50c8526cf5e0d13',
@@ -13,8 +16,12 @@ describe('hopBase', () => {
         adminStatusId: '681a044bd4546c227ff1305c',
         adminUserId: '681a061ac6e45110dff9dcad',
       };
-      const hopBaseFound = { ...hopBase };
-      expect(hopBaseFound).toStrictEqual(hopBaseExpect);
+
+      /*
+       * Act
+       */
+      const hopFound = { ...hopBase };
+      expect(hopFound).toStrictEqual(hopExpected);
     });
   });
 });
