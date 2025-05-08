@@ -1,6 +1,10 @@
 import { seederPerSeed } from './seederPerSeed';
 
-export const seederPerModel = async ({ model, modelName, seeds }) => {
+export const seederPerModel = async ({ model, modelName, seeds, verbose = false }) => {
+  if (!seeds || typeof seeds !== 'object') {
+    throw new TypeError('seeds: invalid');
+  }
+
   const seedNames = Object.keys(seeds);
 
   for (const seedName of seedNames) {
@@ -12,6 +16,7 @@ export const seederPerModel = async ({ model, modelName, seeds }) => {
       seed,
       seedName,
       returnSavedModel,
+      verbose,
     });
   }
 };

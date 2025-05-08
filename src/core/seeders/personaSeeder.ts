@@ -18,52 +18,61 @@ export const personaSeeder = async (
   UserModel,
   UserSessionModel,
   UserTypeModel,
+  verbose = false,
 ) => {
   await seederPerModel({
     model: OrganisationModel,
     modelName: 'organisationModel',
     seeds: organisationSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: OrganisationRoleModel,
     modelName: 'organisationRoleModel',
     seeds: organisationRoleSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: OrganisationTypeModel,
     modelName: 'organisationTypeModel',
     seeds: organisationTypeSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: OrganisationUserModel,
     modelName: 'organisationUserModel',
     seeds: organisationUserSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: RoleModel,
     modelName: 'roleModel',
     seeds: roleSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: UserModel,
     modelName: 'userModel',
     seeds: userSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: UserSessionModel,
     modelName: 'userSessionModel',
     seeds: userSessionSeeds,
+    verbose,
   });
 
   await seederPerModel({
     model: UserTypeModel,
     modelName: 'userTypeModel',
     seeds: userTypeSeeds,
+    verbose,
   });
 };

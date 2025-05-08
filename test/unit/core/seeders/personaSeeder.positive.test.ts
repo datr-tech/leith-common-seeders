@@ -89,7 +89,7 @@ describe('personaSeeder', () => {
         RoleModelMock,
         UserModelMock,
         UserSessionModelMock,
-        UserTypeModelMock,
+        UserTypeModelMock
       );
 
       /*

@@ -1,4 +1,5 @@
 import { modelSaveOptions } from '@app-lcs2/config';
+import { logger } from '@datr.tech/leith-common-logger';
 
 export const seederPerSeed = async ({
   model,
@@ -6,8 +7,17 @@ export const seederPerSeed = async ({
   seed,
   seedName,
   returnSavedModel = false,
+  verbose = false,
 }) => {
+  if (verbose) {
+    logger.info({ modelName, model, seedName, seed });
+  }
+
   const doc = new model(seed);
+
+  if (verbose) {
+    logger.info({ doc });
+  }
 
   if (!doc) {
     throw new Error(`${modelName} (${seedName}): invalid`);
