@@ -7,6 +7,7 @@ describe('organisationUserDatrTechAdmin', () => {
        * Arrange
        */
       const organisationUserExpected = {
+        organisationUserId: '681c4aad98a97a956676144e',
         organisationId: '681b6491451661fa673e4fc6',
         userId: '681a061ac6e45110dff9dcad',
         description: 'The datr.tech admin organisation user',
