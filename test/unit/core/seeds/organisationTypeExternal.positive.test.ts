@@ -18,6 +18,10 @@ describe('organisationTypeExternal', () => {
        * Act
        */
       const organisationTypeFound = { ...organisationTypeExternal };
+
+      /*
+       * Assert
+       */
       expect(organisationTypeFound).toStrictEqual(organisationTypeExpected);
     });
   });

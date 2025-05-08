@@ -18,6 +18,10 @@ describe('templateTypeBase', () => {
        * Act
        */
       const templateTypeFound = { ...templateTypeBase };
+
+      /*
+       * Assert
+       */
       expect(templateTypeFound).toStrictEqual(templateTypeExpected);
     });
   });

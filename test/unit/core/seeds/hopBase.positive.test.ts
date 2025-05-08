@@ -21,6 +21,10 @@ describe('hopBase', () => {
        * Act
        */
       const hopFound = { ...hopBase };
+
+      /*
+       * Assert
+       */
       expect(hopFound).toStrictEqual(hopExpected);
     });
   });

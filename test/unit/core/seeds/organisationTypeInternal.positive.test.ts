@@ -18,6 +18,10 @@ describe('organisationTypeInternal', () => {
        * Act
        */
       const organisationTypeFound = { ...organisationTypeInternal };
+
+      /*
+       * Assert
+       */
       expect(organisationTypeFound).toStrictEqual(organisationTypeExpected);
     });
   });

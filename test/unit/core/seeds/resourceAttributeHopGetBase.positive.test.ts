@@ -20,6 +20,10 @@ describe('resourceAttributeHopGetBase', () => {
        * Act
        */
       const resourceAttributeFound = { ...resourceAttributeHopGetBase };
+
+      /*
+       * Assert
+       */
       expect(resourceAttributeFound).toStrictEqual(resourceAttributeExpected);
     });
   });

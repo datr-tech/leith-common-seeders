@@ -18,6 +18,10 @@ describe('roleOwner', () => {
        * Act
        */
       const roleFound = { ...roleOwner };
+
+      /*
+       * Owner
+       */
       expect(roleFound).toStrictEqual(roleExpected);
     });
   });

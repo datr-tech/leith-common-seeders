@@ -20,6 +20,10 @@ describe('userAttributeAdminBase', () => {
        * Act
        */
       const userAttributeFound = { ...userAttributeAdminBase };
+
+      /*
+       * Assert
+       */
       expect(userAttributeFound).toStrictEqual(userAttributeExpected);
     });
   });

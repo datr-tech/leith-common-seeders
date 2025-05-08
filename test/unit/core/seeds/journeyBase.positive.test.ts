@@ -20,6 +20,10 @@ describe('journeyBase', () => {
        * Act
        */
       const journeyFound = { ...journeyBase };
+
+      /*
+       * Assert
+       */
       expect(journeyFound).toStrictEqual(journeyExpected);
     });
   });

@@ -19,6 +19,10 @@ describe('userAdmin', () => {
        * Act
        */
       const userFound = { ...userAdmin };
+
+      /*
+       * Assert
+       */
       expect(userFound).toStrictEqual(userExpected);
     });
   });

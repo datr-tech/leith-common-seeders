@@ -20,6 +20,10 @@ describe('organisationRoleDatrTechAdmin', () => {
        * Act
        */
       const organisationRoleFound = { ...organisationRoleDatrTechAdmin };
+
+      /*
+       * Assert
+       */
       expect(organisationRoleFound).toStrictEqual(organisationRoleExpected);
     });
   });

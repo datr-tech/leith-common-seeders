@@ -21,6 +21,10 @@ describe('projectBase', () => {
        * Act
        */
       const projectFound = { ...projectBase };
+
+      /*
+       * Assert
+       */
       expect(projectFound).toStrictEqual(projectExpected);
     });
   });

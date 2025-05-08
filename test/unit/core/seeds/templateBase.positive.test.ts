@@ -21,6 +21,10 @@ describe('templateBase', () => {
        * Act
        */
       const templateFound = { ...templateBase };
+
+      /*
+       * Assert
+       */
       expect(templateFound).toStrictEqual(templateExpected);
     });
   });

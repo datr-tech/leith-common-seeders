@@ -20,6 +20,10 @@ describe('organisationDatrTech', () => {
        * Act
        */
       const organisationFound = { ...organisationDatrTech };
+
+      /*
+       * Assert
+       */
       expect(organisationFound).toStrictEqual(organisationExpected);
     });
   });

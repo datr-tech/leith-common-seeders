@@ -19,6 +19,10 @@ describe('userSessionAdmin', () => {
        * Act
        */
       const userSessionFound = { ...userSessionAdmin };
+
+      /*
+       * Assert
+       */
       expect(userSessionFound).toStrictEqual(userSessionExpected);
     });
   });

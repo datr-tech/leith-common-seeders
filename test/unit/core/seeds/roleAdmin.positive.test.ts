@@ -18,6 +18,10 @@ describe('roleAdmin', () => {
        * Act
        */
       const roleFound = { ...roleAdmin };
+
+      /*
+       * Assert
+       */
       expect(roleFound).toStrictEqual(roleExpected);
     });
   });
